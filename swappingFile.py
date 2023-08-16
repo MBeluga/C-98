@@ -1,0 +1,10 @@
+def swapfileData():
+    a = open ("sample1.txt", "r")
+    b = open ("sample2.txt", "r")
+    data1 = a.read()
+    data2 = b.read()
+    aa = open ("sample1.txt", "w")
+    bb = open ("sample2.txt", "w")
+    aa.write(data2)
+    bb.write(data1)
+swapfileData()
